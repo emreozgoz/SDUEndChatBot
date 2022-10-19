@@ -1,0 +1,90 @@
+{"intents": [
+         {"tag": "bos",
+         "patterns": [""],
+         "responses": ["Sorunu tam olarak anlayamadim, lutfen daha detayli şekilde anlatır mısın"],
+         "context": ""
+        },
+        {"tag": "greeting",
+         "patterns": ["Merhaba", "Selam", "Hey", "Heyyo", "Naber","Heey","Heeey"],
+         "responses": ["Merhaba", "Seni gordugume sevindim", "Selam", "Nasil gidiyor?"],
+         "context": ""
+        },
+       
+		{"tag": "howresponse",
+         "patterns": ["Nasılsın","Nasıl gidiyor?","İyi senin nasıl gidiyor?","İyi senin?","Sende ne var ne yok?"],
+         "responses": ["Iyiyim, sen nasilsin?","Iyi sayilir","Yuvarlanip gidiyoruz iste","Nolsun hep ayni"],
+         "context": ""
+        },
+		{"tag": "fine",
+         "patterns": ["Ben de iyiyim","İyiyim"],
+         "responses": ["Iyi olmana sevindim"],
+         "context": ""
+        },
+		{"tag": "name",
+         "patterns": ["Adın ne?","İsmin ne?","İsmini söyler misin?","Senin adın ne?"],
+         "responses": ["Adim SduChatBot,Sdu=Suleyman Demirel Universitesi","Benim adim SduChatBot ama sen kisaca sdu diyebilirsin"],
+         "context": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Güle güle", "Bye Bye", "Sonra konuşalım", "Gidiyorum ben", "Görüşürüz"],
+         "responses": ["Gorusuruz", "Bye", "Gitme, biraz daha konusalım"],
+         "context": ""
+        },
+        {"tag": "age",
+         "patterns": ["Kaç yaşındasın?", "Yaş kaç?"],
+         "responses": ["Henuz 1 ayligim", "Sahibim yeni kodladi iste 1 aylik diyelim"],
+         "context": ""
+        },
+        {"tag": "ask",
+         "patterns": ["Bana sena karadeniz'in numarasını yollar mısın?"],
+         "responses": ["Tamam ama benden aldigini soyleme, 123456"],
+         "context": ""
+        },
+		{"tag": "thanks",
+         "patterns": ["Teşekkür ederim","Çok sağol","Teşekkürler"],
+         "responses": ["Ne demek","Rica ederim"],
+         "context": ""
+        },
+        {"tag": "miss",
+         "patterns": ["Seni özledim", "Seni çok özledim"],
+         "responses": ["Ozleseydin her gun yazardin","Ben de seni cok ozledim"],
+         "context": ""
+        },
+        {"tag": "genel1",
+        "patterns": ["Eğitim-öğretim ile ilgili duyuruları nereden takip edebilirim?","Endüstri Mühendisliği Bölümü tarafından yapılan duyuruları nereden takip edebilirim?", "Duyuruları nereden öğrenebilirim", "Duyuru","Duyuru Takibi"],
+        "responses": ["Üniversitemizin haber, duyuru ve etkinlik bilgilerini üniversite resmi sosyal medya hesaplarının yanı sıra SDÜ ana sayfası, mail ve SDÜ Mobil uygulaması üzerinden takip edebilirsiniz."],
+        "context": ""
+        },
+        {"tag": "ogrenci1",
+        "patterns": ["Öğrenci numaramı nasıl öğrenebilirim?","Öğrenci numaram nedir", "Numaramı nereden öğrenebilirim"],
+        "responses": ["Öğrenci Bilgi Sistemi (ÖBS) ana sayfasında yer alan “Öğrenci No Öğren” sekmesi üzerinden kimlik bilgilerinizi girerek öğrenci numaranıza erişebilirsiniz. Sisteme giriş yapmak için kullanacağınız şifre ise kimlik numaranızın son 8 hanesidir."],
+        "context": ""
+        },
+        {"tag": "ogrenci2",
+        "patterns": ["Öğrenci Bilgi Sistemini nasıl kullanabilirim?","OYS ye nereden girebilirim", "Ders Notlarımı nereden görebilirim","Ders Notları"],
+        "responses": ["SDUNet Web adresinden öğrenci numaranız ve kullanıcı şifreniz ile bilgilerinize erişebilir ve ÖYS'yi kullanabilirsiniz:"],
+        "context": ""
+        },
+        {"tag": "ogrenci3",
+        "patterns": ["Öğrenci Mailimi nasıl öğrenirim?","Öğrenci Maili", "Mail adresim nedir"],
+        "responses": ["SDUNet Web adresinden mail adresinize erişebilirsiniz."],
+        "context": ""
+        },
+        {"tag": "ogrenci4",
+        "patterns": ["Öğrenci kartımı nereden alabilirim","Öğrenci Kartı", "Kartıma nereden ulaşabilirim"],
+        "responses": ["Üniversitemize kayıt yaptıran öğrencilerimiz, öğrenci kimliklerini bölüm sekreterliğinden alabilirler."],
+        "context": ""
+        },
+        {"tag": "ogrenci5",
+        "patterns": ["Öğrenci kimlik kartımı kaybettim, ne yapmam gerekir?","Öğrenci Kartı Kayıp", "Kartım kayboldu", "Kartımı kaybettim"],
+        "responses": ["Kimlik kartınızı kaybetmeniz durumunda, yerel bir gazeteye kayıp ilanı vererek bölüm sekreterliğine başvuru yapmalısınız."],
+        "context": ""
+        },
+        {"tag": "ogrenci6",
+        "patterns": ["Akademik danışmanımı nasıl öğrenebilirim?","Danışmanım kim", "Danışmanımı nasıl öğrenebilirim"],
+        "responses": ["OBS üzerinden sorumlu akademisyeninizi görebilirsiniz."],
+        "context": ""
+        }
+
+   ]
+}
