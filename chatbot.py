@@ -17,14 +17,15 @@ from tensorflow.keras.models import load_model
 
 
 
-#client = pymongo.MongoClient("mongodb+srv://emreozgoz:1472583690Emre@cluster0.bfl0n3q.mongodb.net/?retryWrites=true&w=majority")
-client = pymongo.MongoClient('mongodb://localhost:27017')
+client = pymongo.MongoClient("mongodb+srv://emreozgoz:1472583690Emre.@cluster0.bfl0n3q.mongodb.net/?retryWrites=true&w=majority")
+db = client.test
+#client = pymongo.MongoClient('mongodb://localhost:27017')
 db = client.test
 print(db.client)
 
 #veritabani = client.get_database('Cluster0')
-veritabani = client.get_database('ChatbotDB')
-db = client['ChatbotDB']
+veritabani = client.get_database('Cluster0')
+db = client['Cluster0']
 coll = db['ChatTable']
 
 lemmatizer = TurkishStemmer()
