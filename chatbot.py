@@ -17,9 +17,9 @@ from tensorflow.keras.models import load_model
 
 
 
-client = pymongo.MongoClient("mongodb+srv://emreozgoz:1472583690Emre.@cluster0.bfl0n3q.mongodb.net/?retryWrites=true&w=majority")
+#client = pymongo.MongoClient("mongodb+srv://emreozgoz:1472583690Emre.@cluster0.bfl0n3q.mongodb.net/?retryWrites=true&w=majority")
+client = pymongo.MongoClient('mongodb://localhost:27017')
 db = client.test
-#client = pymongo.MongoClient('mongodb://localhost:27017')
 db = client.test
 print(db.client)
 

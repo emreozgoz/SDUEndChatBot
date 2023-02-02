@@ -84,7 +84,129 @@
         "patterns": ["Akademik danışmanımı nasıl öğrenebilirim?","Danışmanım kim", "Danışmanımı nasıl öğrenebilirim"],
         "responses": ["OBS üzerinden sorumlu akademisyeninizi görebilirsiniz."],
         "context": ""
+        },
+        {"tag": "ders1",
+        "patterns": ["Ders kaydımı nasıl yapabilirim?","Ders Kaydı", "Ders Kaydı Yapma"],
+        "responses": ["Yeni kayıt yaptıran (birinci sınıf) öğrenci kaydolduğu bölümün eğitim-öğretim planının ilgili yarıyıllardaki derslerinin tamamını alır. Diğer öğrenciler, her yarıyıl başında akademik takvimde belirtilen süreler içinde, öğrenci bilgi sistemi üzerinden ders seçer; ders seçimi sonucu ilgili mevzuatla belirlenen öğrenci katkı payı veya öğrenim ücretini ödemek suretiyle kayıtlarını yenilemiş olurlar. Kaydını yenilemeyen öğrencilerin kayıt yenilemedikleri süre öğrenim süresinden sayılır ve öğrenci bu süre içerisinde öğrencilik haklarından yararlanamaz."],
+        "context": ""
         }
+        ,
+        {"tag": "ders2",
+        "patterns": ["Ekle Sil Haftası","Ders Ekleyip Çıkarma", "Ekle Sil"],
+        "responses": ["Öğrenci akademik takvimde belirtilen ekle/sil tarihlerinde, öğrenci bilgi sistemi üzerinden yeni dersler alabilir, tekrarlamak ve almak zorunda olduğu dersler hariç, diğer dersleri bırakabilir. Ekle/sil tarihlerinden sonra hiçbir şekilde ders değişikliği yapılmaz. Öğrenciler kayıt yenileme işleminin tümünden sorumlu olup, kayıtlarını kendileri yenilemek zorundadırlar."],
+        "context": ""
+        }
+        ,
+        {"tag": "ders3",
+        "patterns": ["Ders Kaydımı Yapamadım","Ders Kaydı Zamanını Kaçırdım", "Ders Kayıt Vakiti"],
+        "responses": ["Süresi içerisinde kaydını yaptıramayan öğrenciler mazeretine ilişkin başvurularını, akademik takvimde belirtilen tarihlerde yapar. Mazereti, ilgili yönetim kurulunca kabul edilen öğrencilerin kayıt yenileme işlemleri öğrenci işleri tarafından ekle/sil tarihlerinde tamamlanır."],
+        "context": ""
+        }
+        ,
+        {"tag": "ders4",
+        "patterns": ["Yarıyıl Not Ortalaması nedir?","Dönem Ortalaması Nedir"],
+        "responses": ["Öğrencilerin, tamamladıkları yarıyılda (dönemde) almış oldukları derslere ait başarı notları kullanılarak hesap edilen ortalamadır."],
+        "context": ""
+        }
+        ,
+        {"tag": "ders5",
+        "patterns": ["Genel Not Ortalaması (GNO) nedir?","Genel Ortalama Nedir"],
+        "responses": ["Öğrencinin öğrenimine başladığı andan itibaren, tamamlamış olduğu yarıyıl da dâhil olmak üzere almış olduğu tüm derslerin katılımıyla elde edilen ve başarısını belirleyen not ortalamasıdır."],
+        "context": ""
+        }
+        ,
+        {"tag": "ders6",
+        "patterns": ["Bir seçmeli dersten başarısız oldum, bir sonraki yıl aynı seçmeli dersi almak zorunda mıyım?","Geçemediğim Seçmeli Dersi Almak Zorunda Mıyım", "Seçmeli dersten kaldım"],
+        "responses": ["Öğrencinin başarısız olduğu seçmeli dersin ilgili yarıyılda yeniden açılmaması halinde öğrenciler başarısız olduğu seçmeli dersin yerine, kayıtlı olduğu bölümün bölüm kurulunca uygun görülen ve ilgili yönetim kurulunca onaylanan dersleri alırlar."],
+        "context": ""
+        }
+        ,
+        {"tag": "ders7",
+        "patterns": ["Ders programını ne zaman ve nereden görebilirim?","Dınav programımı ne zaman ve nereden görebilirim?", "Sınav Programı", "Ders Programı"],
+        "responses": ["Ders ve sınav programınızı SDÜ Öğrenci Bilgi Sistemi üzerinden ve bölüm web sayfası duyurularından öğrenebilirsiniz."],
+        "context": ""
+        },
+        {"tag": "ders8",
+        "patterns": ["Ders İçeriklerini nereden alabilirim?"],
+        "responses": ["Ders içerikleri hakkında Öğrenci Bilgi Sistemi’nden öğrenci numaranızı ve şifrenizi (kimlik numarasının son 8 hanesi) girerek AKTS Bilgi Paketinden bilgi alabilirsiniz."],
+        "context": ""
+        },
+        {"tag": "sinav1",
+        "patterns": ["Bir dersin Ara Sınavı’na (Vize’ye) giremedim, bu dersin Mazeret Sınavı’na girebilir miyim?", "Mazeret Sınavına Girebilir Miyim", "Mazeret Sınavı"],
+        "responses": ["Ara sınava girememe mazeretlerini belgeleyen öğrenciler, Mazeret Sınavı hakkından yararlanabilir."],
+        "context": ""
+        },
+        {"tag": "sinav2",
+        "patterns": ["Hangi durumlarda Bütünleme Sınavı’na girebilirim?", "Bütünleme Sınavına girebilir miyim", "Bütünleme Sınavı", "Büt Sınavı"],
+        "responses": ["Öğrenciler yarıyıl/yılsonu sınavına girme koşullarının tamamını sağlamış olmalarına rağmen yarıyıl/yılsonu sınavına katılamadıkları derslerin, yarıyıl/yılsonu sınavına katılarak başarısız oldukları derslerin (FF, FD), yarıyıl/yılsonu sınavında koşullu geçtikleri (DD, DC) ve başarılı oldukları derslerin (CC ve üstü), yaz okulu uygulaması olup olmadığına bakılmaksızın, bütünleme sınavına katılabilirler. Bütünleme sınavına girmek isteyen DD ve üstü harf notu alan öğrencilerin, öğrenci bilgi sistemi üzerinden talepte bulunmaları gerekir."],
+        "context": ""
+        },
+        {"tag": "sinav3",
+        "patterns": ["Tek Ders Sınavı’na nasıl başvurabilirim?", "Tek Ders", "Tek Ders Sınavı"],
+        "responses": ["Kayıtlı bulunduğu programın ders planında bulunan tüm dersleri başaran fakat mezuniyetine yalnızca 1 (bir) dersi kalan öğrenciler, derse devam şartını daha önceden sağlamış olmaları kaydıyla bu sınava girebilmek için bağlı bulunduğu Akademik Birime (Bölüm Başkanlığı’na) dilekçe ile müracaat edebilirler."],
+        "context": ""
+        },
+        {"tag": "sinav4",
+        "patterns": ["Sınav sonuçlarına itiraz nasıl olur?", "Sınav Notuna İtiraz", "Sınav Sonucu itiraz", "Notuma itiraz"],
+        "responses": ["Öğrenciler maddi hata itirazı için sınav sonuçlarının ilan tarihinden itibaren bir hafta içerisinde bölüm başkanlığına yazılı olarak başvurabilirler. İlgili birimin isteği üzerine ilgili öğretim elemanı öğrencinin sınav kağıdını veya sınav cetvelini maddi hata yönünden tekrar inceler. İlgili öğretim elemanı ve bölüm başkanının itiraza ilişkin yazılı kanaatleri, ilgili yönetim kurulunca değerlendirilerek karar verilir. İlgili yönetim kurulunca sınav kağıtlarında veya sınav cetvellerinde maddi bir hata belirlenirse, bu hata ilgili öğretim elemanının ve bölüm başkanının da görüşü alınarak düzeltilir. İtiraz başvurusu en geç on beş gün içerisinde ilgili yönetim kurulunda görüşülerek sonuçlandırılır ve öğrenciye duyurulur. "],
+        "context": ""
+        },
+        {"tag": "staj1",
+        "patterns": ["Staj başvurum kabul edildi. Ne yapmalıyım?", "Staj Başvurusu", "Staj", "Başvuru Belgeleri"],
+        "responses": ["Bölüm Sayfasında Yer Alan  Dökümanları hazırlayarak bölüme gerekli belgeleri vermeniz gerekmektedir"],
+        "context": ""
+        },
+        {"tag": "staj2",
+        "patterns": ["Stajımı yaptım, şimdi ne yapmalıyım?", "Stajdan sonra ne yapmalıyım", "Stajım bitti"],
+        "responses": ["Öğrenci staj bitiminden sonra 30 gün içerisinde Sicil Fişi ile birlikte Staj Defterini bölüme teslim etmek zorundadır. Staj defterinin tesliminden sonraki 1 ay içerisinde Staj Mülakat Sınavına girer. Mülakat sınavının tarihi ve saati bölüm web sayfasında ilan edilmektedir. "],
+        "context": ""
+        }
+        ,
+        {"tag": "cap1",
+        "patterns": ["Çift Ana Dal ve Yan Dal nedir? Kimler başvurabilir?", "ÇAP", "Yan Dal", "Çap yapabilir miyim", "yandal nasıl yapılır"],
+        "responses": ["Çift ana dal eğitim-öğretimi, üniversitenin lisans veya ön lisans programına kayıtlı olan bir öğrencinin, ikinci bir diploma almak amacıyla üniversitenin diğer bir programına devam etmesidir. Yan dal eğitim-öğretimi ise, bir lisans programına kayıtlı olan öğrencinin, bilgisini artırmak amacıyla ikinci bir lisans programından ders almasıdır. Çift ana dal programına en erken 3. Yarıyıl, en geç 5. Yarıyılın başında Genel Not Ortalamanız (GNO) en az 2,70 ise; yan dal programlarına en erken 3, en geç 6. Yarıyılın başında GNO’nuz en az 2,35 ise başvurabilirsiniz."],
+        "context": ""
+        },
+        {"tag": "cap2",
+        "patterns": ["Yatay Geçiş nasıl olmaktadır?", "Yatay Geçiş", "Yatay geçiş nasıl yaparım"],
+        "responses": ["Kurum İçi ve Kurum Dışı Yatay Geçişler Yükseköğretim Kurumlarında Önlisans ve Lisans Düzeyindeki Programlar Arasında Geçiş, Çift Anadal, Yan Dal ile Kurumlar Arası Kredi Transferi Yapılması Esaslarına İlişkin Yönetmelik hükümlerine göre yürütülür."],
+        "context": ""
+        },
+        {"tag": "muaf1",
+        "patterns": ["Ders Muafiyeti için nereye başvurmalıyım?", "Muafiyet", "Ders Muafiyeti"],
+        "responses": ["Öğrencilerin, ders muafiyet dilekçesi, muaf olmak istediği derslerin içerikleri ve muaf olmak istediği dersleri almış olduğu birimdeki transkript ile bölüm sekreterine başvurmaları gerekmektedir."],
+        "context": ""
+        },
+        {"tag": "muaf2",
+        "patterns": ["Muafiyeti istenen bir dersin değerlendirilmesi nasıl yapılır?", "Muafiyet Geçerliliği", "Muafiyet değerlendirilmesi"],
+        "responses": ["Dersin adı, kredi/saat değeri, dersin içeriği kriterleri Bölüm İntibak Komisyonu'nca değerlendirilir. Fakülte Yönetim Kurulu tarafından karara bağlanır.Öğrenci, bir yükseköğretim kurumunda başarmış olduğu ders için muafiyet talebinde bulunabilir. Muafiyet talebini içeren dilekçe, muafiyete esas olacak belgelerle birlikte kayıt işlemi süresi içerisinde ilgili akademik birime teslim edilir. Muafiyet talebi; dersin içeriği, kredisi ve başarı notu dikkate alınarak ilgili Yönetim Kurulu tarafından karara bağlanır."],
+        "context": ""
+        },
+        {"tag": "yurtdisi1",
+        "patterns": ["ERASMUS+ programı nedir? Nasıl yararlanabilirim?", "Erasmus", "Erasmus Hakkında Bilgi", "Erasmus nasıl yaparım"],
+        "responses": ["Erasmus+ programında öğrenci değişim süresi 3 ile 12 ay arasında değişmektedir. Bir öğrencinin aynı öğrenim kademesi içerisinde (lisans, yüksek lisans, doktora), varsa Hayatboyu Öğrenme Programı döneminde yapılan öğrenci hareketliliği süresi ile Erasmus+ döneminde yapılan öğrenci hareketliliği süreleri, toplamda 12 ayı geçemez. Hibe verilmese dahi aynı öğrenim kademesi içerisinde yapılan öğrenci hareketliliği faaliyetlerinin toplam süresinin 12 ayı geçmeyecek şekilde planlanması gerekir. Öğrenci mevcut öğrenim kademesindeki eğitimini tamamlayıp yeni bir öğrenim kademesine geçtiğinde (örneğin lisans eğitimi tamamlanıp yüksek lisans eğitimine başlandığında), yeni öğretim kademesinde tekrar en fazla 12 aya kadar hareketlilik gerçekleştirmesi mümkün olur. Böylelikle her bir öğrenim kademesinde en fazla 12 aya kadar olmak üzere, aynı kişinin en fazla 36 aya kadar hareketlilik gerçekleştirmesi mümkündür."],
+        "context": ""
+        },
+        {"tag": "yurtdisi2",
+        "patterns": ["Farabi Programı nedir? Nasıl yaralanabilirim?", "Farabi", "Farabi hakkında bilgi", "Farabi nasıl yaparım"],
+        "responses": ["Farabi Değişim Programı '' Yükseköğretim Kurumları arasında öğrenci değişim programı, üniversite ve yüksek teknoloji enstitüleri bünyesine önlisans, lisans, yüksek lisans, ve doktora düzeyinde eğitim-öğretim yapan yükseköğretim kurumları arasında öğrenci değişim programıdır.'' Farabi Değişim Programı, öğrencilerin bir veya iki yarıyıl süresince kendi kurumlarının dışında bir yükseköğretim kurumunda eğitim ve öğretim faaliyetlerine devam etmelerini amaçlamaktadır."],
+        "context": ""
+        },
+        {"tag": "yurtdisi3",
+        "patterns": ["Mevlana Programı nedir? Nasıl yaralanabilirim?", "Mevlana", "Mevlana Hakkında Bilgi", "Mevlana Nasıl yaparım"],
+        "responses": ["Mevlana Değişim Programı YÖK'e bağlı bir program olup Türkiye Yüksek Öğretim Kurumu tarafından tanınmakta olan dünya çapındaki tüm üniversiteler ile Süleyman Demirel Üniversitesi öğrencileri ve akademik personeline değişim imkanı tanıyan bir programdır. Mevlana Değişim Programı sayesinde SDU öğrencisi ve SDU de görev yapan her akademisyen Halihazırda anlaşma yapmış olduğumuz her üniversiteye kendi çalışma alanıyla alakalı başvuru yapabilir.Bu sayede pek çok farklı kültür ve farklı eğitim sistemleri ile tanışan öğrencilerimizin ve akademisyenlerimizin gelecekte daha üretken olmaları hedeflenmektedir."],
+        "context": ""
+        },
+        {"tag": "mezuniyet1",
+        "patterns": ["Mezuniyet Koşulları nelerdir?", "Nasıl Mezun Olurum", "Mezun olma koşulları", "Mezuniyet"],
+        "responses": ["Bir öğrencinin izlemekte olduğu programdan mezun olabilmesi için, öğrenciye tanınan kanuni süre içinde eğitim-öğretim ders planında yer alan sayıda zorunlu/seçmeli ders almak ve bu derslerden başarılı olmak koşulu ile devam etmekte olduğu programı en az 2.00 GNO ile tamamlaması zorunludur. "],
+        "context": ""
+        },
+        {"tag": "mezuniyet2",
+        "patterns": ["Mezuniyet aşamasına geldim, ne yapmam gerekmektedir?", "Mezun olduktan sonra ne yapmalıyım", "Mezun oldum şimdi ne yapmalıyım"],
+        "responses": ["Mezuniyet koşullarını sağlayan öğrenciler; Öğrenci İlişik Kesme Belgesi, Transkript, Öğrenci Kimliği ve T.C. Kimlik Fotokopisi ile bölüm sekreterine başvurmalıdırlar."],
+        "context": ""
+    }
 
    ]
 }
