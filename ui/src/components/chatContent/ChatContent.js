@@ -5,54 +5,57 @@ import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
 
 export default class ChatContent extends Component {
+  studentImg = 'https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png';
+  botImg = 'https://w3.sdu.edu.tr/assets/img/sdu-logo.png';
+
   messagesEndRef = createRef(null);
   chatItms = [
     {
       key: 1,
       image:
-        "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png",
+        this.studentImg,
       type: "",
       msg: "Hi Tim, How are you?",
     },
     {
       key: 2,
       image:
-        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
+        this.botImg,
       type: "other",
       msg: "I am fine.",
     },
     {
       key: 3,
       image:
-        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
+        this.botImg,
       type: "other",
       msg: "What about you?",
     },
     {
       key: 4,
       image:
-        "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png",
+        this.studentImg,
       type: "",
       msg: "Awesome these days.",
     },
     {
       key: 5,
       image:
-        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
+        this.botImg,
       type: "other",
       msg: "Finally. What's the plan?",
     },
     {
       key: 6,
       image:
-        "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png",
+        this.studentImg,
       type: "",
       msg: "what plan mate?",
     },
     {
       key: 7,
       image:
-        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
+        this.botImg,
       type: "other",
       msg: "I'm taliking about the tutorial",
     },
@@ -79,7 +82,7 @@ export default class ChatContent extends Component {
             type: "",
             msg: this.state.msg,
             image:
-              "https://pbs.twimg.com/profile_images/1116431270697766912/-NfnQHvh_400x400.jpg",
+              this.chatItms,
           });
           this.setState({ chat: [...this.chatItms] });
           this.scrollToBottom();
@@ -101,7 +104,7 @@ export default class ChatContent extends Component {
             <div className="current-chatting-user">
               <Avatar
                 isOnline="active"
-                image="https://w3.sdu.edu.tr/assets/img/sdu-logo.png"
+                image= {this.botImg}
               />
               <p>SDÜ Endüstri Mühendisliği</p>
             </div>

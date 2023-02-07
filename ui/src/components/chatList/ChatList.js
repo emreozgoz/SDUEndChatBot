@@ -3,10 +3,12 @@ import "./chatList.css";
 import ChatListItems from "./ChatListItems";
 
 export default class ChatList extends Component {
+  studentImg = 'https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png';
+  botImg = 'https://w3.sdu.edu.tr/assets/img/sdu-logo.png';
   allChatUsers = [
     {
       image:
-        'https://w3.sdu.edu.tr/assets/img/sdu-logo.png',
+        this.botImg,
       id: 1,
       name: "SDÜ Endüstri Mühendisliği",
       active: true,
