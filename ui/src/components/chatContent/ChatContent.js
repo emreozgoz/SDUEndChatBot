@@ -1,4 +1,4 @@
-import React, { Component, useState, createRef, useEffect } from "react";
+import React, { Component, createRef } from "react";
 
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
@@ -10,49 +10,49 @@ export default class ChatContent extends Component {
     {
       key: 1,
       image:
-        "https://pbs.twimg.com/profile_images/1116431270697766912/-NfnQHvh_400x400.jpg",
+        "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png",
       type: "",
       msg: "Hi Tim, How are you?",
     },
     {
       key: 2,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
       type: "other",
       msg: "I am fine.",
     },
     {
       key: 3,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
       type: "other",
       msg: "What about you?",
     },
     {
       key: 4,
       image:
-        "https://pbs.twimg.com/profile_images/1116431270697766912/-NfnQHvh_400x400.jpg",
+        "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png",
       type: "",
       msg: "Awesome these days.",
     },
     {
       key: 5,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
       type: "other",
       msg: "Finally. What's the plan?",
     },
     {
       key: 6,
       image:
-        "https://pbs.twimg.com/profile_images/1116431270697766912/-NfnQHvh_400x400.jpg",
+        "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png",
       type: "",
       msg: "what plan mate?",
     },
     {
       key: 7,
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU",
+        "https://w3.sdu.edu.tr/assets/img/sdu-logo.png",
       type: "other",
       msg: "I'm taliking about the tutorial",
     },
@@ -101,17 +101,9 @@ export default class ChatContent extends Component {
             <div className="current-chatting-user">
               <Avatar
                 isOnline="active"
-                image="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTA78Na63ws7B7EAWYgTr9BxhX_Z8oLa1nvOA&usqp=CAU"
+                image="https://w3.sdu.edu.tr/assets/img/sdu-logo.png"
               />
-              <p>Tim Hover</p>
-            </div>
-          </div>
-
-          <div className="blocks">
-            <div className="settings">
-              <button className="btn-nobg">
-                <i className="fa fa-cog"></i>
-              </button>
+              <p>SDÜ Endüstri Mühendisliği</p>
             </div>
           </div>
         </div>
