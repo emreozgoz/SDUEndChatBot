@@ -1,10 +1,5 @@
 {"intents": [
-         {"tag": "bos",
-         "patterns": [""],
-         "responses": ["Sorunu tam olarak anlayamadim, lutfen daha detayli şekilde anlatır mısın"],
-         "context": ""
-        },
-        {"tag": "greeting",
+         {"tag": "greeting",
          "patterns": ["Merhaba", "Selam", "Hey", "Heyyo", "Naber","Heey","Heeey"],
          "responses": ["Merhaba", "Seni gordugume sevindim", "Selam", "Nasil gidiyor?"],
          "context": ""

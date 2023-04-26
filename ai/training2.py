@@ -78,10 +78,9 @@ model.add(Dense(len(train_y[0]),activation='softmax'))
 model.summary()
 sgd = SGD(lr=0.01, decay=1e-6, momentum=0.9, nesterov=True)
 model.compile(loss='categorical_crossentropy', optimizer=sgd, metrics=['accuracy'])
-trainn = model.fit(np.array(train_x), np.array(train_y), epochs=500    , batch_size=5, verbose=1)
+trainn = model.fit(np.array(train_x), np.array(train_y), epochs=50    , batch_size=5, verbose=1)
 model.save('chatbot_model.model')
 
 plt.plot(trainn.history['accuracy'],label='training set accuracy')
 plt.plot(trainn.history['loss'],label='training set loss')
 plt.show()
-

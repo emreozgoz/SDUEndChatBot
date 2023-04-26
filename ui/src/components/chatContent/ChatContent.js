@@ -3,61 +3,19 @@ import React, { Component, createRef } from "react";
 import "./chatContent.css";
 import Avatar from "../chatList/Avatar";
 import ChatItem from "./ChatItem";
+import axios from "axios";
 
 export default class ChatContent extends Component {
-  studentImg = 'https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png';
-  botImg = 'https://w3.sdu.edu.tr/assets/img/sdu-logo.png';
+  studentImg =
+    "https://cdn.pixabay.com/photo/2017/01/31/21/23/avatar-2027366_1280.png";
+  botImg = "https://w3.sdu.edu.tr/assets/img/sdu-logo.png";
 
   messagesEndRef = createRef(null);
   chatItms = [
     {
-      key: 1,
-      image:
-        this.studentImg,
-      type: "",
-      msg: "Hi Tim, How are you?",
-    },
-    {
-      key: 2,
-      image:
-        this.botImg,
+      image: this.botImg,
       type: "other",
-      msg: "I am fine.",
-    },
-    {
-      key: 3,
-      image:
-        this.botImg,
-      type: "other",
-      msg: "What about you?",
-    },
-    {
-      key: 4,
-      image:
-        this.studentImg,
-      type: "",
-      msg: "Awesome these days.",
-    },
-    {
-      key: 5,
-      image:
-        this.botImg,
-      type: "other",
-      msg: "Finally. What's the plan?",
-    },
-    {
-      key: 6,
-      image:
-        this.studentImg,
-      type: "",
-      msg: "what plan mate?",
-    },
-    {
-      key: 7,
-      image:
-        this.botImg,
-      type: "other",
-      msg: "I'm taliking about the tutorial",
+      msg: "Merhaba Size Nasıl Yardımcı Olabilirim?",
     },
   ];
 
@@ -68,44 +26,41 @@ export default class ChatContent extends Component {
       msg: "",
     };
   }
-
-  scrollToBottom = () => {
-    this.messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  componentDidMount() {
-    window.addEventListener("keydown", (e) => {
-      if (e.keyCode == 13) {
-        if (this.state.msg != "") {
-          this.chatItms.push({
-            key: 1,
-            type: "",
-            msg: this.state.msg,
-            image:
-              this.chatItms,
-          });
-          this.setState({ chat: [...this.chatItms] });
-          this.scrollToBottom();
-          this.setState({ msg: "" });
-        }
-      }
-    });
-    this.scrollToBottom();
-  }
   onStateChange = (e) => {
     this.setState({ msg: e.target.value });
   };
-
+  getAnswer(question) {
+    return axios
+      .post(`http://127.0.0.1:8000/department`, { question: question })
+      .then((firm) => {
+        return firm.data;
+      });
+  }
+  handleMessageSubmit = async (e) => {
+    const x = await this.getAnswer(this.state.msg);
+    const newMessage = {
+      image: this.studentImg,
+      type: "",
+      msg: this.state.msg,
+    };
+    const answer = {
+      image: this.botImg,
+      type: "other",
+      msg: x.answer,
+    };
+    this.chatItms.push(newMessage);
+    this.chatItms.push(answer);
+    this.setState({ chat: this.chatItms });
+    //setMessages([...messages, newMessage]);
+    //messageInput.value = '';
+  };
   render() {
     return (
       <div className="main__chatcontent">
         <div className="content__header">
           <div className="blocks">
             <div className="current-chatting-user">
-              <Avatar
-                isOnline="active"
-                image= {this.botImg}
-              />
+              <Avatar isOnline="active" image={this.botImg} />
               <p>SDÜ Endüstri Mühendisliği</p>
             </div>
           </div>
@@ -116,7 +71,6 @@ export default class ChatContent extends Component {
               return (
                 <ChatItem
                   animationDelay={index + 2}
-                  key={itm.key}
                   user={itm.type ? itm.type : "me"}
                   msg={itm.msg}
                   image={itm.image}
@@ -128,16 +82,17 @@ export default class ChatContent extends Component {
         </div>
         <div className="content__footer">
           <div className="sendNewMessage">
-            <button className="addFiles">
-              <i className="fa fa-plus"></i>
-            </button>
             <input
               type="text"
               placeholder="Type a message here"
               onChange={this.onStateChange}
               value={this.state.msg}
             />
-            <button className="btnSendMsg" id="sendMsgBtn">
+            <button
+              onClick={this.handleMessageSubmit}
+              className="btnSendMsg"
+              id="sendMsgBtn"
+            >
               <i className="fa fa-paper-plane"></i>
             </button>
           </div>
